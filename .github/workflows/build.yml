@@ -25,9 +25,6 @@ jobs:
         run: |
           yarn install
 
-      - name: Build project
-        run: |
-          yarn run serve
 
       - name: Test project
         run: |
@@ -47,3 +44,6 @@ jobs:
 #      - name: Deploy to Heroku
 #        run: |
 #          git push heroku HEAD:master -f
+      - name: Build project
+        run: |
+          yarn run serve
