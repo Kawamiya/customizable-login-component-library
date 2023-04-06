@@ -34,7 +34,7 @@ jobs:
 
       - name: Build project
         run: |
-          yarn run serve
+          yarn run build
         # 发布到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.0
