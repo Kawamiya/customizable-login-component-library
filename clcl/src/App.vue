@@ -1,17 +1,21 @@
 <template>
   <nav>
-    <router-link to="/">NormalCentral</router-link> |
-    <router-link to="/NormalFull">NormalFull</router-link> |
-    <router-link to="/NormalLateral">NormalLateral</router-link> |
+    <router-link to="/">NormalCentral</router-link>
+    |
+    <router-link to="/NormalFull">NormalFull</router-link>
+    |
+    <router-link to="/NormalLateral">NormalLateral</router-link>
+    |
     <router-link to="/GoogleCentral">GoogleCentral</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
-body{
+body {
   margin: 0;
 }
+
 #app {
   padding: 0;
   margin: 0;
