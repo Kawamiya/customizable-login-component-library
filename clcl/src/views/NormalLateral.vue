@@ -1,11 +1,13 @@
 <template>
-  about
+
 </template>
 
 <script>
 export default {
-  name: "About",
-};
+    name: "NormalLateral"
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

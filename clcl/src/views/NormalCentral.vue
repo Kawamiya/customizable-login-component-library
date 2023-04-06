@@ -1,11 +1,13 @@
 <template>
-  home
+
 </template>
 
 <script>
 export default {
-  name: "Home",
-};
+    name: "NormalCentral"
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
