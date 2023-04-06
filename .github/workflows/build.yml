@@ -32,6 +32,16 @@ jobs:
         env:
           CI: true
 
+      - name: Build project
+        run: |
+          yarn run serve
+        # 发布到 GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
+
       - name: codecov
           # 使用 codecov 官方提供的 action
         uses: codecov/codecov-action@v1
@@ -44,6 +54,3 @@ jobs:
 #      - name: Deploy to Heroku
 #        run: |
 #          git push heroku HEAD:master -f
-      - name: Build project
-        run: |
-          yarn run serve
