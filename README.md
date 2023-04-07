@@ -10,6 +10,7 @@
 [![codecov](https://codecov.io/github/Kawamiya/customizable-login-component-library/branch/main/graph/badge.svg?token=PQWYJ6LIKK)](https://codecov.io/github/Kawamiya/customizable-login-component-library)
 ![example workflow](https://github.com/Kawamiya/customizable-login-component-library/actions/workflows/build.yml/badge.svg)
 [![npm](https://img.shields.io/npm/v/customizable-login-component-library)](https://www.npmjs.com/package/customizable-login-component-library)
+[![Github Page](https://img.shields.io/badge/Github%20Pages-link-blueviolet)](https://kawamiya.github.io/customizable-login-component-library/home.html)
 ## Overview
 
 ---
