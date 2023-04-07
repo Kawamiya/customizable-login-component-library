@@ -1,26 +1,26 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
-import NormalCentral from '../views/NormalCentral.vue'
-import NormalFull from '../views/NormalFull.vue'
+import Amazon from '../views/Amazon.vue'
+import Github from '../views/Github.vue'
 import NormalLateral from '../views/NormalLateral.vue'
-import GoogleCentral from '../packages/GoogleCentral.vue'
+import Google from '../packages/Google.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    redirect: GoogleCentral
+    redirect: Amazon
   },
   {
-    path: '/NormalCentral',
-    name: 'NormalCentral',
-    component: NormalCentral
+    path: '/Amazon',
+    name: 'Amazon',
+    component: Amazon
   },
   {
-    path: '/NormalFull',
-    name: 'NormalFull',
-    component: NormalFull
+    path: '/Github',
+    name: 'Github',
+    component: Github
   },
   {
     path: '/NormalLateral',
@@ -28,9 +28,9 @@ const routes: Array<RouteRecordRaw> = [
     component: NormalLateral
   },
   {
-    path: '/GoogleCentral',
-    name: 'GoogleCentral',
-    component: GoogleCentral
+    path: '/Google',
+    name: 'Google',
+    component: Google
   },
   // {
   //   path: '/about',

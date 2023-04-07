@@ -8,7 +8,7 @@ module.exports = {
   //   '!**/vendor/**'
   // ],
   collectCoverageFrom: [
-    '**/src/packages/GoogleCentral.vue'
+    '**/src/packages/Google.vue'
     // '**/src/views/**',
     // '!**/node_modules/**',
     // '!**/vendor/**'

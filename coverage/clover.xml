@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1680855357366" clover="3.2.0">
-  <project timestamp="1680855357366" name="All files">
+<coverage generated="1680861287472" clover="3.2.0">
+  <project timestamp="1680861287472" name="All files">
     <metrics statements="51" coveredstatements="44" conditionals="6" coveredconditionals="6" methods="22" coveredmethods="17" elements="79" coveredelements="67" complexity="0" loc="51" ncloc="51" packages="1" files="1" classes="1"/>
-    <file name="GoogleCentral.vue" path="C:\project\customizable-login-component-library\src\packages\GoogleCentral.vue">
+    <file name="Google.vue" path="C:\project\customizable-login-component-library\src\packages\Google.vue">
       <metrics statements="51" coveredstatements="44" conditionals="6" coveredconditionals="6" methods="22" coveredmethods="17"/>
       <line num="4" count="1" type="stmt"/>
       <line num="7" count="1" type="stmt"/>

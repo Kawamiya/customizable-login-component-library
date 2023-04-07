@@ -1,4 +1,4 @@
-import GoogleCentral from'./GoogleCentral.vue';
+import GoogleCentral from './Google.vue';
 
 const components = [
   GoogleCentral

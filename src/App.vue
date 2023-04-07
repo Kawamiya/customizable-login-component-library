@@ -4,13 +4,11 @@
 <!--    |-->
     <a href="home.html">Home</a>
     |
-    <router-link to="/NormalCentral">NormalCentral</router-link>
+    <router-link to="/Amazon">Amazon</router-link>
     |
-    <router-link to="/NormalFull">NormalFull</router-link>
+    <router-link to="/Github">Github</router-link>
     |
-    <router-link to="/NormalLateral">NormalLateral</router-link>
-    |
-    <router-link to="/GoogleCentral">GoogleCentral</router-link>
+    <router-link to="/Google">Google</router-link>
   </nav>
   <router-view />
 </template>
