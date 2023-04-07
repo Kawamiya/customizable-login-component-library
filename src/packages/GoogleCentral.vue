@@ -126,28 +126,6 @@ export default {
   }
 };
 </script>
-<!--<script lang="ts" setup>-->
-<!--import { ref } from "vue";-->
-<!--import { getCurrentInstance } from "vue";-->
-<!--const { proxy } = getCurrentInstance();-->
-
-<!--const countries = ref<Array<String>>([-->
-<!--  "English (United States)",-->
-<!--  "Chinese",-->
-<!--  "Janpanese"-->
-<!--]);-->
-
-<!--const changeToNextPage = () => {-->
-<!--  proxy.$refs.carouselMenu.next();-->
-<!--};-->
-
-<!--function login() {-->
-<!--const username = "abc";-->
-<!--const password = "abc";-->
-<!--console.log(username, password);-->
-<!--}-->
-<!--</script>-->
-
 
 <style scoped>
 .cardContainer {

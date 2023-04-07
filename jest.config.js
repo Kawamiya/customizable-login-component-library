@@ -1,7 +1,6 @@
 module.exports = {
   preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
   collectCoverage: true,
-
   // 一组glob模式，指示一组应为其收集覆盖率信息的文件。如果文件与指定的 glob 模式匹配，则即使该文件不存在测试，也将为其收集覆盖率信息，并且在测试套件中从不需要它。
   // collectCoverageFrom: [
   //   '**/*.{js,jsx}',
@@ -9,7 +8,8 @@ module.exports = {
   //   '!**/vendor/**'
   // ],
   collectCoverageFrom: [
-    '**/src/views/**',
+    '**/src/packages/GoogleCentral.vue'
+    // '**/src/views/**',
     // '!**/node_modules/**',
     // '!**/vendor/**'
   ],
