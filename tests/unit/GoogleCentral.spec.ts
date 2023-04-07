@@ -1,5 +1,5 @@
 import { mount  } from '@vue/test-utils'
-import GoogleCentral from '@/views/GoogleCentral.vue'
+import GoogleCentral from '@/packages/GoogleCentral.vue'
 
 describe('HelloWorld.vue', () => {
     it('renders test', () => {

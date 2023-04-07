@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import NormalCentral from '../views/NormalCentral.vue'
 import NormalFull from '../views/NormalFull.vue'
 import NormalLateral from '../views/NormalLateral.vue'
-import GoogleCentral from '../views/GoogleCentral.vue'
+import GoogleCentral from '../packages/GoogleCentral.vue'
 
 
 const routes: Array<RouteRecordRaw> = [

@@ -2,5 +2,6 @@ const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave:false,
-  publicPath: '/customizable-login-component-library'
+  publicPath: '/customizable-login-component-library',
+  parallel: false
 });
