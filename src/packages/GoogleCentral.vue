@@ -68,7 +68,7 @@
 
             <div style="display: flex;justify-content: space-between;margin-top: 50px">
               <router-link to="/404">Forgot password?</router-link>
-              <el-button type="primary" style="height: 36px;width: 80px">Next</el-button>
+              <el-button @click="login" type="primary" style="height: 36px;width: 80px">Next</el-button>
             </div>
           </el-carousel-item>
         </el-carousel>
@@ -93,24 +93,60 @@
 
 </template>
 
-<script lang="ts"> export default { name: 'GoogleCentral' };</script>
+<!--<script lang="ts"> export default { name: "GoogleCentral" };</script>-->
 
-<script setup lang="ts">
-import { ref } from "vue";
-import { getCurrentInstance } from "vue";
-
-const { proxy } = getCurrentInstance();
-
-const countries = ref<Array<String>>([
-  "English (United States)",
-  "Chinese",
-  "Janpanese"
-]);
-
-const changeToNextPage = () => {
-  proxy.$refs.carouselMenu.next();
+<script>
+/**
+ * @vue-data {Array} countries - countries list
+ * @vue-event {} changeToNextPage - change to next login page
+ * @vue-event {} login - login
+ */
+export default {
+  name: "GoogleCentral",
+  data() {
+    return {
+      countries: [
+        "English (United States)",
+        "Chinese",
+        "Janpanese"
+      ],
+      username: "",
+      password: ""
+    };
+  },
+  methods: {
+    login() {
+      const username = "abc";
+      const password = "abc";
+      console.log(username, password);
+    },
+    changeToNextPage() {
+      this.$refs.carouselMenu.next();
+    }
+  }
 };
 </script>
+<!--<script lang="ts" setup>-->
+<!--import { ref } from "vue";-->
+<!--import { getCurrentInstance } from "vue";-->
+<!--const { proxy } = getCurrentInstance();-->
+
+<!--const countries = ref<Array<String>>([-->
+<!--  "English (United States)",-->
+<!--  "Chinese",-->
+<!--  "Janpanese"-->
+<!--]);-->
+
+<!--const changeToNextPage = () => {-->
+<!--  proxy.$refs.carouselMenu.next();-->
+<!--};-->
+
+<!--function login() {-->
+<!--const username = "abc";-->
+<!--const password = "abc";-->
+<!--console.log(username, password);-->
+<!--}-->
+<!--</script>-->
 
 
 <style scoped>

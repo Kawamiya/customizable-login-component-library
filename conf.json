@@ -1,0 +1,20 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc"
+    ]
+  },
+  "plugins": ["node_modules/jsdoc-vuejs"],
+  "source": {
+    "include": [
+      "./src/packages"
+
+    ],
+    "includePattern": "\\.(vue|js)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "template": "node_modules/minami"
+  }
+}

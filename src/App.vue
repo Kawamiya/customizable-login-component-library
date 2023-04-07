@@ -1,6 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">NormalCentral</router-link>
+<!--    <router-link to="/">Home</router-link>-->
+<!--    |-->
+    <a href="home.html">Home</a>
+    |
+    <router-link to="/NormalCentral">NormalCentral</router-link>
     |
     <router-link to="/NormalFull">NormalFull</router-link>
     |
@@ -24,11 +28,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /*float: right;*/
 }
 
 nav {
   top: 30px;
   position: absolute;
+
+  /*width: calc(100%);*/
   /*padding: 30px;*/
 }
 

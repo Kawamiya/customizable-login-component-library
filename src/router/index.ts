@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home.vue'
 import NormalCentral from '../views/NormalCentral.vue'
 import NormalFull from '../views/NormalFull.vue'
 import NormalLateral from '../views/NormalLateral.vue'
@@ -10,7 +10,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    redirect: NormalCentral
+    redirect: GoogleCentral
   },
   {
     path: '/NormalCentral',
