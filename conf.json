@@ -15,6 +15,7 @@
     "excludePattern": "(^|\\/|\\\\)_"
   },
   "opts": {
+    "destination": "public",
     "template": "node_modules/minami"
   }
 }
