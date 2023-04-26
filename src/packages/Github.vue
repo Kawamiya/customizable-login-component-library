@@ -17,7 +17,7 @@
     </div>
     <el-input v-model="password" placeholder="Please input your password" />
     <div style="padding-top: 15px" />
-    <el-button @click="changeToNextPage" style="width: 100%;border-color: rgb(24 119 51)" color="rgb(24 119 51)">Sign
+    <el-button @click="login" style="width: 100%;border-color: rgb(24 119 51)" color="rgb(24 119 51)">Sign
       in
     </el-button>
   </el-card>
@@ -31,6 +31,11 @@
 </template>
 
 <script>
+/**
+ * @vue-data {String} username - username
+ * @vue-data {String} password - password
+ * @vue-event {} login - login
+ */
 export default {
   name: "GithubCentral"
 };

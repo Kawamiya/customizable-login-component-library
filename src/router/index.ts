@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
-import Amazon from '../views/Amazon.vue'
-import Github from '../views/Github.vue'
+import Amazon from '../packages/Amazon.vue'
+import Github from '../packages/Github.vue'
 import NormalLateral from '../views/NormalLateral.vue'
 import Google from '../packages/Google.vue'
-
+import testNPM from '../views/testNPM.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -31,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Google',
     name: 'Google',
     component: Google
+  },
+  {
+    path: '/testNPM',
+    name: 'testNPM',
+    component: testNPM
   },
   // {
   //   path: '/about',

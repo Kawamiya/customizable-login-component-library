@@ -97,6 +97,8 @@
 
 <script>
 /**
+ * @vue-data {String} username - username
+ * @vue-data {String} password - password
  * @vue-data {Array} countries - countries list
  * @vue-event {} changeToNextPage - change to next login page
  * @vue-event {} login - login

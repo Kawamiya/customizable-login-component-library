@@ -1,9 +1,9 @@
 import { mount  } from '@vue/test-utils'
-import AmazomCentral from '@/packages/Amazon.vue'
+import GithubCentral from '@/packages/Github.vue'
 
 describe('HelloWorld.vue', () => {
   it('renders test', () => {
-    const wrapper = mount (AmazomCentral)
+    const wrapper = mount (GithubCentral)
 
     // expect( wrapper.text()).toMatch("Sign in")
   })

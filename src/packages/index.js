@@ -1,13 +1,20 @@
 import GoogleCentral from './Google.vue';
-
+import AmazonCentral from "@/packages/Amazon";
+import GithubCentral from "@/packages/Github";
 const components = [
-  GoogleCentral
+  GoogleCentral,
+  AmazonCentral,
+  GithubCentral
 ];
 
-const install = (Vue) => {
+const CLCL = (Vue) => {
   components.forEach(com => {
     Vue.component(com.name, com);
   });
 };
 
-export default install;
+if (typeof window !== 'undefined' && window.Vue) {
+  CLCL.install(window.Vue)
+}
+
+export default CLCL;

@@ -60,6 +60,12 @@
 </template>
 
 <script>
+/**
+ * @vue-data {String} username - username
+ * @vue-data {String} password - password
+ * @vue-event {} changeToNextPage - change to next login page
+ * @vue-event {} login - login
+ */
 export default {
   name: "AmazonCentral",
   data() {
