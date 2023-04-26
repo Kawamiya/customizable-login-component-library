@@ -115,8 +115,11 @@ a {
   text-decoration: none;
 }
 
-.el-card ::v-deep .el-card__body {
+/*.el-card ::v-deep .el-card__body {*/
+/*  padding: 0;*/
+/*}*/
+
+.el-card__body {
   padding: 0;
 }
-
 </style>

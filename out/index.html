@@ -24,7 +24,12 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Amazon.html">Amazon</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Github.html">Github</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Google.html">Google</a></span></li>
+  <li class="nav-link nav-home-link"><a href="home.html">Home</a></li>
+  <li class="nav-link nav-home-link"><a href="index.html">Demo</a></li>
+  <li class="nav-heading">Modules</li>
+  <li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Amazon.html">Amazon</a></span></li>
+  <li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Github.html">Github</a></span></li>
+  <li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Google.html">Google</a></span></li>
 </nav>
 
 <div id="main">
@@ -58,22 +63,71 @@
 <a href="https://kawamiya.github.io/customizable-login-component-library/home.html"><img src="https://img.shields.io/badge/Github%20Pages-link-blueviolet" alt="Github Page"></a></p>
 <h2>Overview</h2>
 <hr>
-<p>A login component library for vue3</p>
-<p><img src="./GoogleCentral.png" alt=""></p>
+<p>A login component library for vue3.</p>
+<h4>Have you ever designed login pages over and over again, even though they don't change much?</h4>
+<h4>Do you despair of your aesthetics and can't design a login page to your liking?</h4>
+<p>If you think so, then this project is definitely for you.</p>
+<p>In this project, I designed three login components out of the box by referring to login sites of well-known companies.</p>
+<p>The main purpose of this library is to help developers omit repetitive login page development or provide a login page template.</p>
+<p>The project provides the following login page:</p>
+<p><img src="./picture/google_central.png" alt="">
+<img src="./picture/amazon_central.png" alt="">
+<img src="./picture/github_central.png" alt=""></p>
+<p>Of course, I provide the source code in github, you can refer to this login page for modification, all the login page styles are concentrated inside a single vue file, no extra css settings are needed.</p>
+<p>Through element-ui's Carousel component, I have implemented a multi-layer form, which can support some complex login operations, while if you want to increase the number of layers of the form (such as adding CAPTCHA or SMS verification), you can refer to the usage of the Carousel component in eelement-ui to modify and add.</p>
 <h3>Installation</h3>
 <pre class="prettyprint source lang-angular2html"><code>npm install customizable-login-component-library
 </code></pre>
 <h3>Usage</h3>
-<h4>global registration</h4>
-<pre class="prettyprint source lang-angular2html"><code>import LoginComponent from 'customizable-login-component-library'
-
-Vue.use(LoginComponent)
+<p>First of all, this project is based on vue and element-ui development, so the library must be used in combination with them.</p>
+<p>Next let's start by creating a new vue project to understand how to use this library.</p>
+<h4>create a new project with vue/cli</h4>
+<p>you can create a vue project with webstorm</p>
+<p>or use vue/cli to init a project</p>
+<pre class="prettyprint source lang-angular2html"><code>vue create &lt;project-name>
 </code></pre>
-<h4>use in Vue component</h4>
+<p>if you use vue/cli to create a new project, the new project should be like:
+<img src="./picture/new_project.png" alt=""></p>
+<h4>install element-ui</h4>
+<p>please refer to official document of element-ui to install it.</p>
+<h4>install this library</h4>
+<pre class="prettyprint source lang-angular2html"><code>npm install customizable-login-component-library
+</code></pre>
+<h4>modify main.ts/main.js to use this library</h4>
+<p>the main.ts/main.js should be like:</p>
+<pre class="prettyprint source lang-angular2html"><code>import { createApp } from &quot;vue&quot;;
+import App from &quot;./App.vue&quot;;
+import router from &quot;./router&quot;;
+import store from &quot;./store&quot;;
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
+// @ts-ignore
+import CLCL from './packages/index.js'
+createApp(App)
+  .use(ElementPlus)
+  .use(store)
+  .use(router)
+  .use(CLCL)
+  .mount(&quot;#app&quot;);
+</code></pre>
+<p>At this point we have all the settings ready, so we can use the library directly.</p>
+<h4>use component of this library</h4>
+<p>modify App.vue</p>
 <pre class="prettyprint source lang-angular2html"><code>&lt;template>
-  &lt;GoogleCentral/>
+  &lt;github-central/>
 &lt;/template>
-</code></pre></article>
+&lt;style>
+  #app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+&lt;/style>
+</code></pre>
+<p>If you have done all of the above without any problems, you should see the following screen:</p>
+<p><img src="./picture/final.png" alt=""></p></article>
     </section>
 
 
@@ -86,7 +140,7 @@ Vue.use(LoginComponent)
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Tue Apr 25 2023 20:05:47 GMT-0400 (Eastern Daylight Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Tue Apr 25 2023 22:36:17 GMT-0400 (Eastern Daylight Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
